@@ -62,22 +62,22 @@ const Forms = () => {
                 <form onSubmit={formSubmit}>
                     <div>
                         {submitSuccess && Object.keys(formError).length === 0 && (
-                        <p id="success">Registration Successful</p>
+                        <p id="success">REGISTRATION SUCCESSFUL</p>
                     )}
                     </div>
-                    <label htmlFor="FirstName">Enter Your First Name</label>
+                    <label htmlFor="FirstName">Your First Name</label>
                     <input type="text" name="firstName" onChange={handleInputValue} />
                     {formError.firstName ? <p>{formError.firstName}</p> : ""}
 
-                    <label htmlFor="LastName">Enter Your Last Name</label>
+                    <label htmlFor="LastName">Your Last Name </label>
                     <input type="text" name="lastName" onChange={handleInputValue} />
                     {formError.lastName ? <p>{formError.lastName}</p> : ""}
 
-                    <label htmlFor="email">Enter Your E-mail</label>
+                    <label htmlFor="email">Your E-mail ID</label>
                     <input type="email" name="email" onChange={handleInputValue} />
                     {formError.email ? <p>{formError.email}</p> : ""}
 
-                    <label htmlFor="contact">Enter Your Phone Number</label>
+                    <label htmlFor="contact">Your Phone Number</label>
                     <input type="number" name="contact" onChange={handleInputValue} />
                     {formError.contact ? <p>{formError.contact}</p> : ""}
 
